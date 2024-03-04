@@ -63,6 +63,7 @@ def patch_kernel_file(kernel_file_path, kallsyms_file_path, output_file_path):
     # Apply patches to specified symbols
     patch_symbol(kernel_data, "check_modinfo", base_address, "00 00 80 52 C0 03 5F D6")
     patch_symbol(kernel_data, "check_version", base_address, "20 00 80 52 C0 03 5F D6")
+    # The GKI kernel may not have this function
     patch_symbol(kernel_data, "module_sig_check", base_address, "00 00 80 52 C0 03 5F D6")
 
     # Save the patched kernel data to the output file
