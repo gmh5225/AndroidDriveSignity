@@ -8,13 +8,10 @@ AndroidDriveSignity is a Python script designed for patching Android kernel file
 - **Intelligent Patching:** Dynamically adjusts patching based on the presence of the PACIASP instruction, ensuring compatibility across different kernel configurations.
 - **User-Friendly CLI:** Provides a straightforward command-line interface for specifying the kernel binary, the kallsyms symbol table, and the output file paths.
 
-### Prerequisites
+### Requirements
 
-Before using AndroidDriveSignity, make sure you have:
-
-- Python 3.x installed on your system.
-- The target Android kernel binary file and its corresponding kallsyms symbol table file.
-- A clear understanding of the risks involved with kernel patching and modifying driver verification mechanisms.
+- Rooted Android devices``(ARMv8.3)`` with [Magisk](https://github.com/topjohnwu/Magisk) or [KernelSU](https://github.com/tiann/KernelSU)
+- Python 3.x
 
 ### Usage
 
