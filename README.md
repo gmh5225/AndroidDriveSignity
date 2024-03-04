@@ -21,3 +21,29 @@ AndroidDriveSignity is a Python script designed for patching Android kernel``(AR
 
    ```bash
    python AndroidDriveSignity.py <kernel_file_path> <kallsyms_file_path> <output_file_path>
+
+### How to get your kallsyms?
+```
+adb shell
+su
+echo 0 > /proc/sys/kernel/kptr_restrict
+exit
+exit
+adb shell su -c "cat /proc/kallsyms > /data/local/tmp/kallsyms"
+adb pull /data/local/tmp/kallsyms
+```
+
+### How to extract your kernel file?
+If there are two partitions, prioritize trying "boot_a":
+```
+adb shell su -c "dd if=$(readlink /dev/block/by-name/boot_a) of=/data/local/tmp/boot.img"
+```
+If there is only one partition, then it is "boot.img":
+```
+adb shell su -c "dd if=$(readlink /dev/block/by-name/boot) of=/data/local/tmp/boot.img"
+```
+Then, pull the boot image to your local machine:
+```
+adb pull /data/local/tmp/boot.img
+```
+
