@@ -12,6 +12,7 @@ AndroidDriveSignity is a Python script designed for patching Android kernel``(AR
 
 - Rooted Android devices``(ARMv8.3)`` with [Magisk](https://github.com/topjohnwu/Magisk) or [KernelSU](https://github.com/tiann/KernelSU)
 - Python 3.x
+- ADB
 
 ### Usage
 
