@@ -51,4 +51,4 @@ Finally, use [magiskboot](https://github.com/svoboda18/magiskboot/releases) to e
 ```
 magiskboot --unpack boot.img
 ```
-
+You will obtain two files: one is the ``kernel``(your kernel file), and the other is ``ramdisk.cpio``.
