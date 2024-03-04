@@ -67,3 +67,9 @@ adb shell su -c insmod /data/local/tmp/demo.ko
 adb shell su -c "lsmod |grep demo"
 adb shell su -c rmmod /data/local/tmp/demo.ko
 ```
+
+## Credits
+- ``Linux``
+- ``Android``
+- Some anonymous people
+
