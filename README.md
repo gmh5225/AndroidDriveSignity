@@ -1,6 +1,6 @@
 # `AndroidDriveSignity`
 
-AndroidDriveSignity is a Python script designed for patching Android kernel files, enabling the loading of drivers without being subject to various verification checks, specifically signature verifications. This tool aims to facilitate the development and testing process by allowing developers to bypass the kernel's built-in security measures that prevent unofficial or modified drivers from being loaded.
+AndroidDriveSignity is a Python script designed for patching Android kernel``(ARMv8.3)`` files, enabling the loading of drivers without being subject to various verification checks, specifically signature verifications. This tool aims to facilitate the development and testing process by allowing developers to bypass the kernel's built-in security measures that prevent unofficial or modified drivers from being loaded.
 
 ### Features
 
