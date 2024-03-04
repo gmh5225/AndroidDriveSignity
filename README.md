@@ -1,14 +1,14 @@
-# AndroidDriveSignity
+# `AndroidDriveSignity`
 
 AndroidDriveSignity is a Python script designed for patching Android kernel files, enabling the loading of drivers without being subject to various verification checks, specifically signature verifications. This tool aims to facilitate the development and testing process by allowing developers to bypass the kernel's built-in security measures that prevent unofficial or modified drivers from being loaded.
 
-## Features
+### Features
 
 - **Targeted Symbol Patching:** Modifies specific symbols within the kernel (`check_modinfo`, `check_version`, and `module_sig_check`) to circumvent driver signature verification mechanisms.
 - **Intelligent Patching:** Dynamically adjusts patching based on the presence of the PACIASP instruction, ensuring compatibility across different kernel configurations.
 - **User-Friendly CLI:** Provides a straightforward command-line interface for specifying the kernel binary, the kallsyms symbol table, and the output file paths.
 
-## Prerequisites
+### Prerequisites
 
 Before using AndroidDriveSignity, make sure you have:
 
@@ -16,7 +16,7 @@ Before using AndroidDriveSignity, make sure you have:
 - The target Android kernel binary file and its corresponding kallsyms symbol table file.
 - A clear understanding of the risks involved with kernel patching and modifying driver verification mechanisms.
 
-## Usage
+### Usage
 
 1. **Prepare the Necessary Files:** Ensure you have the kernel binary file (`kernel_file_path`), the kallsyms symbol table file (`kallsyms_file_path`), and a destination for the patched kernel (`output_file_path`).
 
