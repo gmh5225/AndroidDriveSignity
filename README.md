@@ -53,3 +53,17 @@ Finally, use [magiskboot](https://github.com/svoboda18/magiskboot/releases) to e
 magiskboot --unpack boot.img
 ```
 You will obtain two files: one is the ``kernel``(your kernel file), and the other is ``ramdisk.cpio``.
+
+### Testing on android12-5.10
+```
+python AndroidDriveSignity.py kernel kallsyms new-kernel
+move/mv new-kernel kernel
+magiskboot --repack boot.img
+adb reboot bootloader
+fastboot flash boot new-boot.img
+fastboot reboot
+adb push demo.ko /data/local/tmp
+adb shell su -c insmod /data/local/tmp/demo.ko
+adb shell su -c "lsmod |grep demo"
+adb shell su -c rmmod /data/local/tmp/demo.ko
+```
