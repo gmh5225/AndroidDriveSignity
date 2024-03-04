@@ -67,7 +67,7 @@ adb shell su -c insmod /data/local/tmp/demo.ko
 adb shell su -c "lsmod |grep demo"
 adb shell su -c rmmod /data/local/tmp/demo.ko
 ```
-You can obtain an example of the Android driver [here]([https://github.com/gmh5225/android-kernel-driver-template](https://github.com/gmh5225/android-kernel-driver-template/releases)https://github.com/gmh5225/android-kernel-driver-template/releases)
+You can obtain an example of the Android driver [here](https://github.com/gmh5225/android-kernel-driver-template/releases)
 
 ## Credits
 - ``Linux``
