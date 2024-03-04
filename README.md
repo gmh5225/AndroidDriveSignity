@@ -47,3 +47,8 @@ Then, pull the boot image to your local machine:
 adb pull /data/local/tmp/boot.img
 ```
 
+Finally, use [magiskboot](https://github.com/svoboda18/magiskboot/releases) to extract the kernel file from boot.img.
+```
+magiskboot --unpack boot.img
+```
+
